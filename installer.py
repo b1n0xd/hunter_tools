@@ -22,6 +22,7 @@ os.system("git clone https://github.com/devanshbatham/paramspider")
 os.system("cd paramspider")
 os.system("pip3 install .")
 os.system("cd ~")
+os.system('clear')
 
 
 # Install tools Golang Based
@@ -32,7 +33,7 @@ for repo in repositoriesGolang:
 for repo in repositoriesPython:
     os.system(f"pip3 install {repo}")
 
-os.system('clear')
+
 os.system("echo 'Installed Tools Golang(based):'")
 for repo in repositoriesGolang:
     tool_name = repo.split("/")[-1]
@@ -42,3 +43,4 @@ os.system("echo 'Installed tools Python(based):'")
 for repo in repositoriesPython:
     tool_name = repo.rsplit('/', maxsplit=1)[-1]
     os.system(f"echo {tool_name}")
+    os.system('sudo mv ~/go/bin/* /usr/bin/ ')
