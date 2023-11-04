@@ -32,10 +32,9 @@ for repo in repositoriesGolang:
 for repo in repositoriesPython:
     os.system(f"pip3 install {repo}")
 
-
+os.system('clear')
 os.system("echo 'Installed Tools Golang(based):'")
 for repo in repositoriesGolang:
-    os.system('clear')
     tool_name = repo.split("/")[-1]
     os.system(f"echo {tool_name}")
 
