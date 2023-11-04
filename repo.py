@@ -38,6 +38,13 @@ repositoriesGolang = [
     "github.com/ferreiraklet/airixss",
     "github.com/dwisiswant0/cf-check",
     "github.com/edoardottt/cariddi/cmd/cariddi",
+    "github.com/assetnote/surf/cmd/sur",
+    "github.com/hueristiq/xurlfind3r/cmd/xurlfind3r",
+    "github.com/0xsha/GoLinkFinder",
+    "github.com/gwen001/github-subdomains",
+    "github.com/sa7mon/s3scanner",
+    "github.com/projectdiscovery/asnmap/cmd/asnmap",
+    "github.com/MrEmpy/Mantra",
     "github.com/ffuf/ffuf/v2",
     "github.com/takshal/freq",
     "github.com/lc/gau/v2/cmd/gau",
@@ -57,7 +64,5 @@ repositoriesGolang = [
 ]
 repositoriesPython = [
     "arjun",
-    "",
-    "",
-
+    "uro",
 ]
