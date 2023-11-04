@@ -3,7 +3,7 @@ from repo import repositoriesGolang
 from repo import repositoriesPython
 
 # Install essentials tools
-os.system("echo '::Update and Upgrade System ::'")
+os.system("echo '::Update and Upgrade System::'")
 os.system("sudo apt-get -y update")
 os.system("sudo apt-get -y upgrade")
 os.system("sudo apt-get install -y git")
