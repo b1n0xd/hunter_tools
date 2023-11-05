@@ -22,7 +22,12 @@ os.system("git clone https://github.com/devanshbatham/paramspider")
 os.system("cd paramspider")
 os.system("pip3 install .")
 os.system("cd ~")
-os.system('clear')
+os.system("clear")
+os.system("echo '[+] Installing Wordlists at ~/wordlists [+]'  ")
+os.system("git clone https://github.com/trickest/wordlists.git")
+os.system("wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH -e robots=of")
+os.system("git clone https://github.com/fuzzdb-project/fuzzdb.git --depth 1")
+os.system("git clone https://gitlab.com/kalilinux/packages/wordlists.git")
 
 
 # Install tools Golang Based
