@@ -14,9 +14,25 @@ def installer(optionSelected):
             print("[+] Instaling Golang Tools Based [+]")
         case 3:
             print("[+] Instaling Python Tools Based [+]")
+            for repo in repositoriesPython:
+                os.system(f"pip3 install {repo}")
+                os.system("echo '[+] Installed tools Python(based) [+]'")
+            for repo in repositoriesPython:
+                tool_name = repo.rsplit('/', maxsplit=1)[-1]
+                os.system(f"echo {tool_name}")
+                os.system('sudo mv ~/go/bin/* /usr/bin/ ')
+                os.system("[+] All Worldlists Successfully installed. [+]")
         case 4:
             print("[+] Instaling All Worldlists [+]")
-            
+            os.system("mkdir ~/worldlists")
+            os.system("cd ~/worldlists")
+            os.system("git clone https://github.com/trickest/wordlists.git")
+            os.system("wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH -e robots=of")
+            os.system("git clone https://github.com/fuzzdb-project/fuzzdb.git --depth 1")
+            os.system("git clone https://gitlab.com/kalilinux/packages/wordlists.git")
+            os.system("cd ~")
+            os.system("clear")
+            os.system("[+] All Worldlists Successfully installed. [+]")
         case _:
             print("[+] Instaling All Tools Based [+]")
             os.system("sudo apt-get -y update")
