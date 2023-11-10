@@ -114,6 +114,19 @@ def install_all_tools():
         "git clone https://gitlab.com/kalilinux/packages/wordlists.git")
     os.system("cd ~")
 
+    print("[+] Installing Python Tools Based [+]")
+    for repo in repositoriesPython:
+        os.system(f"pip3 install {repo}")
+        os.system("clear")
+        os.system("echo '[+] Installed tools Python(based) [+]")
+
+    for repo in repositoriesPython:
+        tool_name = repo.rsplit('/', maxsplit=1)[-1]
+        os.system(f"echo {tool_name}")
+        os.system('sudo mv ~/go/bin/* /usr/bin/ ')
+        os.system("clear")
+        os.system("[+] All Worldlists Successfully installed. [+]")
+
 
 def installer(option_received):
     match option_received:
